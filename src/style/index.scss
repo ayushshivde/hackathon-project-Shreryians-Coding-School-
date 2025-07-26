@@ -1398,9 +1398,9 @@ body::-webkit-scrollbar {
   transform: translateX(-50%);
   z-index: 99999;
   pointer-events: all;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(10, 10, 10, 0.2);
   // background-color: #00000;
-  backdrop-filter: blur(50px);
+  backdrop-filter: blur(80px);
   -webkit-backdrop-filter: blur(10px);
 
   border: 0.1rem solid rgba(255, 255, 255, 0.1);
@@ -1415,6 +1415,8 @@ max-height: 85vh;
     opacity: 1;
     display: flex;
     align-items: center;
+  backdrop-filter: blur(80px);
+  background-color: rgba(10, 10, 10, 0.2);
   
     gap: 1.2rem;
     padding: 1rem;
