@@ -1,7 +1,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
-
+import { Link } from "react-router-dom";
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
 
 function scrambleText(spanRefs, finalText, duration = 1500) {
@@ -99,7 +99,8 @@ const Shop_SectionOneheader = () => {
             style={{
               display: "inline-block",
               transform: "translateY(0)",
-              opacity: 0,
+              opacity: 1,
+              color: "#fff",
             }}
           >
             {letter}
@@ -135,16 +136,17 @@ const Shop_SectionOneheader = () => {
           crafted to offer a distraction-free experience that lets technology
           fade into the background.
         </p>
-        <button
+        <Link
           ref={btnRef}
           className="new-btn"
+          to={'/shop/productinfo/phone3'}
           style={{
             opacity: 0,
             transform: "translateY(10px)",
           }}
         >
           NOTHINGNEW →
-        </button>
+        </Link>
       </div>
     </div>
   );

@@ -45,11 +45,16 @@ position: fixed;
   align-items: start;
   text-align: left;
   gap: 0.5rem;
+  color: #fff;
 }
 
 .scramble-line {
   display: inline;
   white-space: pre;
+  span{
+  color: #fff;
+
+  }
 }
 
 
