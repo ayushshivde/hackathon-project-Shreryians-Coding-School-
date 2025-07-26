@@ -42,9 +42,9 @@ const Nav = () => {
             >
               Explore Nothing
             </button>
-            <button ref={addRefs} className="join-btn">
-              Join Nothing
-            </button>
+            <Link to={"/shop/productinfo/phone3"} ref={addRefs} className="join-btn">
+              NEW LAUNCH
+            </Link>
           </>
         )}
 
