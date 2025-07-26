@@ -1,0 +1,595 @@
+.maincontainer-productinfo {
+  min-height: 100vh;
+  position: relative;
+}
+.maincontainer-productinfo .back-btn-div {
+  background-color: rgba(214, 203, 203, 0.059);
+  backdrop-filter: blur(10px);
+  clip-path: none;
+  height: fit-content;
+  width: 100%;
+  left: 0%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  position: fixed;
+  z-index: 999;
+}
+.maincontainer-productinfo .back-btn-div .back-btn {
+  cursor: pointer;
+  color: #fff;
+}
+.maincontainer-productinfo .container-productinfo {
+  width: 100%;
+  height: auto;
+}
+.maincontainer-productinfo .container-productinfo .section-one-header {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: start;
+  align-items: center;
+  padding-top: 3rem;
+  gap: 0.5rem;
+  min-height: 100vh;
+  position: relative;
+  height: auto;
+}
+.maincontainer-productinfo .container-productinfo .section-one-header .header-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.maincontainer-productinfo .container-productinfo .section-one-header .header-div h1 {
+  font-size: 4.6rem;
+  line-height: 0.8;
+  color: #fff;
+}
+.maincontainer-productinfo .container-productinfo .section-one-header .brand-name-div {
+  background-color: transparent;
+  text-align: center;
+}
+.maincontainer-productinfo .container-productinfo .section-one-header .brand-name-div h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+.maincontainer-productinfo .container-productinfo .section-one-header .product-img-div {
+  width: 30rem;
+  height: 30rem;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  position: fixed;
+  z-index: 999;
+  transition: all ease-in-out;
+}
+.maincontainer-productinfo .container-productinfo .section-one-header .product-img-div img {
+  scale: 1.5;
+  pointer-events: none;
+}
+.maincontainer-productinfo .container-productinfo .section-one-header .description-div {
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  bottom: 10%;
+}
+.maincontainer-productinfo .container-productinfo .section-one-header .description-div ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.maincontainer-productinfo .container-productinfo .section-one-header .description-div ul li {
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-size: 0.8rem;
+}
+.maincontainer-productinfo .container-productinfo .section-one-header .button-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  position: absolute;
+  bottom: 0%;
+}
+.maincontainer-productinfo .container-productinfo .section-one-header .button-group button {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.maincontainer-productinfo .container-productinfo .section-one-header .button-group .add-to-cart-btn {
+  background-color: #cc3628;
+  color: #fff;
+}
+.maincontainer-productinfo .container-productinfo .section-one-header .button-group .add-to-cart-btn:hover {
+  background-color: #b22f22;
+}
+.maincontainer-productinfo .container-productinfo .section-one-header .button-group .ifaudio,
+.maincontainer-productinfo .container-productinfo .section-one-header .button-group .ifPhone {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  line-height: 1;
+  padding: 0.8rem 1rem;
+}
+.maincontainer-productinfo .container-productinfo .section-one-header .button-group .ifaudio .select,
+.maincontainer-productinfo .container-productinfo .section-one-header .button-group .ifPhone .select {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+}
+.maincontainer-productinfo .container-productinfo .section-two-product-features {
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  position: relative;
+}
+.maincontainer-productinfo .container-productinfo .section-two-product-features .pointing-lines-parent {
+  width: 100%;
+  height: 100%;
+}
+.maincontainer-productinfo .container-productinfo .section-two-product-features .pointing-lines-parent .pointing-line {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  background-color: #fff;
+  height: 10rem;
+  width: 20rem;
+  position: absolute;
+}
+.maincontainer-productinfo .container-productinfo .section-two-product-features .pointing-lines-parent .pointing-line-1 {
+  transform: rotate(90deg);
+  clip-path: polygon(0 0, 100% 0, 100% 0.7%, 0.5% 0.7%, 0.5% 20%, 0 20%);
+  top: 62%;
+  left: 45%;
+  width: 12rem;
+}
+.maincontainer-productinfo .container-productinfo .section-two-product-features .pointing-lines-parent .pointing-line-5 {
+  transform: rotate(90deg);
+  clip-path: polygon(0 0, 100% 0, 100% 0.7%, 0.5% 0.7%, 0.5% 20%, 0 20%);
+  top: 62%;
+  left: 45%;
+  width: 12rem;
+}
+.maincontainer-productinfo .container-productinfo .section-two-product-features .pointing-lines-parent .pointing-line-2 {
+  transform: rotate(90deg -1);
+  clip-path: polygon(0 0, 100% 0, 100% 23%, 99% 23%, 99% 0.7%, 0 0.7%);
+  top: 25%;
+  right: 30%;
+  width: 10rem;
+}
+.maincontainer-productinfo .container-productinfo .section-two-product-features .pointing-lines-parent .pointing-line-3 {
+  transform: rotate(270deg);
+  clip-path: polygon(0 0, 100% 0, 100% 23%, 99% 23%, 99% 0.7%, 0 0.7%);
+  top: 68%;
+  left: 13%;
+  width: 10rem;
+}
+.maincontainer-productinfo .container-productinfo .section-two-product-features .pointing-lines-parent .pointing-line-4 {
+  transform: rotate(90deg);
+  clip-path: polygon(0 0, 100% 0, 100% 23%, 99% 23%, 99% 0.7%, 0 0.7%);
+  top: 17%;
+  right: 11%;
+  width: 12rem;
+}
+.maincontainer-productinfo .container-productinfo .section-two-product-features .highlights {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+}
+.maincontainer-productinfo .container-productinfo .section-two-product-features .highlights .highlight-1, .maincontainer-productinfo .container-productinfo .section-two-product-features .highlights .highlight-2, .maincontainer-productinfo .container-productinfo .section-two-product-features .highlights .highlight-3, .maincontainer-productinfo .container-productinfo .section-two-product-features .highlights .highlight-4 {
+  white-space: wrap;
+  font-size: 0.8em;
+  pointer-events: none;
+  text-align: center;
+  position: absolute;
+  padding: 0.2rem;
+}
+.maincontainer-productinfo .container-productinfo .section-two-product-features .highlights .highlight-1 {
+  top: 20%;
+  left: 7%;
+  width: 7rem;
+}
+.maincontainer-productinfo .container-productinfo .section-two-product-features .highlights .highlight-2 {
+  top: 8%;
+  right: 5%;
+  width: 12rem;
+}
+.maincontainer-productinfo .container-productinfo .section-two-product-features .highlights .highlight-3 {
+  bottom: 10%;
+  left: 5%;
+  width: 12rem;
+}
+.maincontainer-productinfo .container-productinfo .section-two-product-features .highlights .highlight-4 {
+  bottom: 10%;
+  right: 8%;
+  width: 4rem;
+}
+.maincontainer-productinfo .container-productinfo .section-two-product-features .footer-details {
+  display: none;
+}
+.maincontainer-productinfo .container-productinfo .section-two-product-features .footer-details .colorName {
+  width: 100%;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  padding: 1rem;
+}
+.maincontainer-productinfo .container-productinfo .section-two-product-features .footer-details .colorName .color-options {
+  transform: translate(-50% -50%);
+}
+.maincontainer-productinfo .container-productinfo .section-two-product-features .footer-details .colorName small {
+  display: inline-flex;
+  width: 5rem;
+}
+.maincontainer-productinfo .container-productinfo .section-two-product-features .footer-details h3 {
+  color: #fff;
+  white-space: nowrap;
+}
+.maincontainer-productinfo .container-productinfo .section-two-product-features .img-on-heading {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .maincontainer-productinfo .back-btn-div {
+    clip-path: none;
+    height: fit-content;
+    left: 0%;
+    justify-content: start;
+    align-items: center;
+  }
+  .maincontainer-productinfo .container-productinfo .section-one-header {
+    padding-top: 6rem;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-one-header .header-div {
+    padding: 0 3rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-one-header .header-div h1 {
+    font-size: 9.5rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-one-header .brand-name-div {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+  }
+  .maincontainer-productinfo .container-productinfo .section-one-header .brand-name-div h1 {
+    font-size: 3rem;
+    line-height: 10%;
+  }
+  .maincontainer-productinfo .container-productinfo .section-one-header .product-img-div {
+    left: 22%;
+    top: 22%;
+  }
+  .maincontainer-productinfo .container-productinfo .section-one-header .colorName {
+    margin-top: 0.3rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-one-header .description-div {
+    padding: 1rem;
+    width: 50%;
+    right: 0;
+  }
+  .maincontainer-productinfo .container-productinfo .section-one-header .description-div ul {
+    text-align: start;
+  }
+  .maincontainer-productinfo .container-productinfo .section-one-header .button-group {
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    bottom: 1%;
+  }
+  .maincontainer-productinfo .container-productinfo .section-one-header .button-group button {
+    width: 50%;
+    font-size: 0.7rem;
+    white-space: nowrap;
+  }
+  .maincontainer-productinfo .container-productinfo .section-one-header .button-group .ifaudio,
+  .maincontainer-productinfo .container-productinfo .section-one-header .button-group .ifPhone {
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    line-height: 1;
+    padding: 0.8rem 1rem;
+    font-size: 0.8rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-one-header .button-group .ifaudio .select,
+  .maincontainer-productinfo .container-productinfo .section-one-header .button-group .ifPhone .select {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .pointing-lines-parent {
+    width: 100%;
+    height: 100%;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .pointing-lines-parent .pointing-line {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    background-color: #fff;
+    height: 10rem;
+    width: 20rem;
+    position: absolute;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .pointing-lines-parent .pointing-line-1 {
+    transform: rotate(90deg);
+    clip-path: polygon(0 0, 100% 0, 100% 0.7%, 0.5% 0.7%, 0.5% 20%, 0 20%);
+    top: 62%;
+    left: 55%;
+    width: 12rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .pointing-lines-parent .pointing-line-5 {
+    transform: rotate(90deg);
+    clip-path: polygon(0 0, 100% 0, 100% 0.7%, 0.5% 0.7%, 0.5% 20%, 0 20%);
+    top: 62%;
+    left: 55%;
+    width: 12rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .pointing-lines-parent .pointing-line-2 {
+    transform: rotate(90deg -1);
+    clip-path: polygon(0 0, 100% 0, 100% 23%, 99% 23%, 99% 0.7%, 0 0.7%);
+    top: 18%;
+    right: 45%;
+    width: 10rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .pointing-lines-parent .pointing-line-3 {
+    transform: rotate(270deg);
+    clip-path: polygon(0 0, 100% 0, 100% 23%, 99% 23%, 99% 0.7%, 0 0.7%);
+    top: 60%;
+    left: 25%;
+    width: 10rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .pointing-lines-parent .pointing-line-4 {
+    transform: rotate(90deg);
+    clip-path: polygon(0 0, 100% 0, 100% 23%, 99% 23%, 99% 0.7%, 0 0.7%);
+    top: 17%;
+    right: 20%;
+    width: 12rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .highlights {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .highlights .highlight-1, .maincontainer-productinfo .container-productinfo .section-two-product-features .highlights .highlight-2, .maincontainer-productinfo .container-productinfo .section-two-product-features .highlights .highlight-3, .maincontainer-productinfo .container-productinfo .section-two-product-features .highlights .highlight-4 {
+    white-space: wrap;
+    font-size: 0.8em;
+    pointer-events: none;
+    text-align: center;
+    position: absolute;
+    padding: 0.2rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .highlights .highlight-1 {
+    top: 15%;
+    left: 7%;
+    width: 12rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .highlights .highlight-2 {
+    top: 8%;
+    right: 5%;
+    width: 20rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .highlights .highlight-3 {
+    bottom: 13%;
+    left: 15%;
+    width: 10rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .highlights .highlight-4 {
+    bottom: 10%;
+    right: 10%;
+    width: 10rem;
+  }
+}
+@media (min-width: 1024px) {
+  .maincontainer-productinfo {
+    overflow-x: visible;
+    height: 100vh;
+  }
+  .maincontainer-productinfo .back-btn-div {
+    clip-path: polygon(0 25%, 0 0%, 100% 0%, 100% 100%);
+    width: 100%;
+    height: 20%;
+    left: 0%;
+    justify-content: start;
+    align-items: start;
+  }
+  .maincontainer-productinfo .container-productinfo .section-one-header {
+    padding-top: 7rem;
+    gap: 0rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-one-header .header-div {
+    padding: 0 1rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-one-header .header-div h1 {
+    font-size: 18rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-one-header .brand-name-div {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+  }
+  .maincontainer-productinfo .container-productinfo .section-one-header .brand-name-div h1 {
+    font-size: 4rem;
+    line-height: 50%;
+  }
+  .maincontainer-productinfo .container-productinfo .section-one-header .description-div {
+    width: 40%;
+  }
+  .maincontainer-productinfo .container-productinfo .section-one-header .product-img-div {
+    left: 0%;
+    top: 25%;
+  }
+  .maincontainer-productinfo .container-productinfo .section-one-header .product-img-div {
+    left: 5%;
+    top: 25%;
+    transform: translateX(0);
+  }
+  .maincontainer-productinfo .container-productinfo .section-one-header .button-group {
+    gap: 0;
+  }
+  .maincontainer-productinfo .container-productinfo .section-one-header .button-group button {
+    width: 40%;
+    line-height: 0;
+    font-size: 0.8rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-one-header .button-group .ifaudio,
+  .maincontainer-productinfo .container-productinfo .section-one-header .button-group .ifPhone {
+    padding: 0.4rem;
+    width: 40%;
+  }
+  .maincontainer-productinfo .container-productinfo .section-one-header .button-group .add-to-cart-btn {
+    border-radius: 0;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features {
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    position: relative;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .pointing-lines-parent {
+    width: 100%;
+    height: 100%;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .pointing-lines-parent .pointing-line {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    background-color: #fff;
+    height: 10rem;
+    width: 20rem;
+    position: absolute;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .pointing-lines-parent .pointing-line-1 {
+    transform: none;
+    clip-path: polygon(0 100%, 0 80%, 0.3% 80%, 0.3% 99.5%, 100% 99.5%, 100% 100%, 0 100%);
+    top: 30%;
+    left: 18%;
+    width: none;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .pointing-lines-parent .pointing-line-2 {
+    transform: none;
+    clip-path: polygon(0 0, 100% 0, 100% 0.7%, 0.2% 0.7%, 0.2% 20%, 0 20%);
+    top: 70%;
+    left: 8%;
+    width: 30rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .pointing-lines-parent .pointing-line-3 {
+    transform: none;
+    clip-path: polygon(0 100%, 100% 100%, 100% 80%, 99.8% 80%, 99.8% 99.5%, 0 99.5%, 0 100%);
+    top: 40%;
+    left: 65%;
+    width: 25rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .pointing-lines-parent .pointing-line-4 {
+    transform: none;
+    clip-path: polygon(0 0, 100% 0, 100% 22%, 99.7% 22%, 99.7% 0.4%, 0 0.6%);
+    top: 80%;
+    right: 15%;
+    width: 20rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .pointing-lines-parent .pointing-line-5 {
+    display: none;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .highlights {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .highlights .highlight-1, .maincontainer-productinfo .container-productinfo .section-two-product-features .highlights .highlight-2, .maincontainer-productinfo .container-productinfo .section-two-product-features .highlights .highlight-3, .maincontainer-productinfo .container-productinfo .section-two-product-features .highlights .highlight-4 {
+    white-space: wrap;
+    font: 1rem;
+    pointer-events: none;
+    text-align: center;
+    position: absolute;
+    padding: 0.2rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .highlights .highlight-1 {
+    top: 40%;
+    left: 10%;
+    width: 14rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .highlights .highlight-2 {
+    top: 50%;
+    right: 5%;
+    width: 20rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .highlights .highlight-3 {
+    bottom: 16%;
+    left: 3%;
+    width: 15rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .highlights .highlight-4 {
+    bottom: 10%;
+    right: 10%;
+    width: 10rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .footer-details {
+    padding: 0 1rem;
+    display: flex;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .footer-details .colorName {
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    padding: 1rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .footer-details .colorName .color-options {
+    transform: translate(-50% -50%);
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .footer-details .colorName small {
+    display: inline-flex;
+    width: 5rem;
+  }
+  .maincontainer-productinfo .container-productinfo .section-two-product-features .footer-details h3 {
+    color: #fff;
+    white-space: nowrap;
+  }
+  .maincontainer-productinfo .container-productinfo .img-on-heading {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    top: 5%;
+    right: 25%;
+    object-fit: cover;
+    rotate: -45deg;
+  }
+}/*# sourceMappingURL=productinfo.css.map */

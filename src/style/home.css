@@ -1,0 +1,615 @@
+.Nav_Parent_div {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  pointer-events: all;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 0.1rem solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  max-width: 96vw;
+  width: 100vw;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  max-height: 85vh;
+}
+.Nav_Parent_div .Nav_div {
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1rem;
+}
+.Nav_Parent_div .Nav_div .logo,
+.Nav_Parent_div .Nav_div button {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Nothing";
+  user-select: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  white-space: wrap;
+}
+.Nav_Parent_div .Nav_div .logo {
+  font-size: 1.5rem;
+}
+.Nav_Parent_div .Nav_div .nav-grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  width: 100%;
+  height: fit-content;
+}
+.Nav_Parent_div .Nav_div .nav-grid .top {
+  grid-area: top;
+  display: flex;
+  margin-bottom: 1rem;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.Nav_Parent_div .Nav_div .nav-grid .top button {
+  font-family: "NextGameExtraBold_font";
+  letter-spacing: 0.5rem;
+  color: #cc3628;
+}
+.Nav_Parent_div .Nav_div .nav-grid .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  grid-area: left;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.Nav_Parent_div .Nav_div .nav-grid .left .Link {
+  transition: all 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
+  font-family: "NextGameExtraBold_font";
+  font-size: 2rem;
+}
+.Nav_Parent_div .Nav_div .nav-grid .right {
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1rem;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-area: right;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.Nav_Parent_div .Nav_div .nav-grid .right .right-top {
+  display: grid;
+  grid-template-rows: 0.3fr 1fr;
+  align-items: center;
+}
+.Nav_Parent_div .Nav_div .nav-grid .right .right-top .phone-div {
+  margin: 1rem 0;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.Nav_Parent_div .Nav_div .nav-grid .right .right-top .phone-names-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  height: 100%;
+  gap: 0.5rem;
+}
+.Nav_Parent_div .Nav_div .nav-grid .right .right-top .phone-names-div .phone-link {
+  font-family: "NextGameExtraBold_font";
+  transition: all 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transform: translateX(0);
+}
+.Nav_Parent_div .Nav_div .nav-grid .right .right-bottom {
+  display: grid;
+  grid-template-rows: 0.3fr 1fr;
+  align-items: center;
+}
+.Nav_Parent_div .Nav_div .nav-grid .right .right-bottom .audio-div {
+  margin: 1rem 0;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.Nav_Parent_div .Nav_div .nav-grid .right .right-bottom .audio-name-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  gap: 0.5rem;
+}
+.Nav_Parent_div .Nav_div .nav-grid .right .right-bottom .audio-name-div .audio-link {
+  font-family: "NextGameExtraBold_font";
+  transition: all 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transform: translateX(0);
+}
+.Nav_Parent_div .Nav_div .nav-grid .right .right-bottom .audio-name-div .audio-link:hover {
+  transform: translateX(2rem);
+  cursor: pointer;
+}
+.Nav_Parent_div .Nav_div .nav-grid .bottom {
+  grid-area: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.Nav_Parent_div .Nav_div .nav-grid .bottom h1 {
+  font-size: 5rem;
+  white-space: nowrap;
+  color: #cc3628;
+  font-family: "NextGameExtraBold_font";
+}
+
+@media (min-width: 1024px) {
+  .Nav_Parent_div {
+    max-width: 98vw;
+    max-height: 98vh;
+  }
+  .Nav_Parent_div .Nav_div {
+    justify-content: space-between;
+    gap: 0;
+    padding: 1rem 2rem 1rem 2rem;
+  }
+  .Nav_Parent_div .Nav_div .logo,
+  .Nav_Parent_div .Nav_div button {
+    white-space: nowrap;
+  }
+  .Nav_Parent_div .Nav_div .nav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    grid-template-rows: repeat(10, 1fr);
+    width: 100%;
+    height: 100%;
+    grid-template-areas: "top   top   top  top  top  " "left left right right right " "left left right right  right " "left left right right  right " "left left right right  right" "left left right right  right" "left left right right  right" "bottom bottom bottom bottom bottom" "bottom bottom bottom bottom  bottom" "bottom bottom bottom bottom  bottom";
+  }
+  .Nav_Parent_div .Nav_div .nav-grid .top {
+    grid-area: top;
+    display: flex;
+    padding-left: 1rem;
+    margin: 0;
+  }
+  .Nav_Parent_div .Nav_div .nav-grid .top button {
+    font-family: "NextGameExtraBold_font";
+    letter-spacing: 0.5rem;
+  }
+  .Nav_Parent_div .Nav_div .nav-grid .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+    gap: 0.5rem;
+    color: #ffffff;
+    grid-area: left;
+    border: none;
+  }
+  .Nav_Parent_div .Nav_div .nav-grid .left .Link {
+    transition: all 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
+    font-family: "NextGameExtraBold_font";
+    transform: translateX(0);
+    font-size: 3.3rem;
+  }
+  .Nav_Parent_div .Nav_div .nav-grid .left .Link:hover {
+    transform: translateX(2rem);
+    cursor: pointer;
+  }
+  .Nav_Parent_div .Nav_div .nav-grid .right {
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+    grid-area: right;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .Nav_Parent_div .Nav_div .nav-grid .right .right-top {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 3fr 2fr;
+    align-items: center;
+  }
+  .Nav_Parent_div .Nav_div .nav-grid .right .right-top .phone-div {
+    margin: 0rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Nav_Parent_div .Nav_div .nav-grid .right .right-top .phone-names-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 6rem;
+    height: 100%;
+    gap: 0.5rem;
+  }
+  .Nav_Parent_div .Nav_div .nav-grid .right .right-top .phone-names-div .phone-link {
+    font-family: "NextGameExtraBold_font";
+    transition: all 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
+    transform: translateX(0);
+  }
+  .Nav_Parent_div .Nav_div .nav-grid .right .right-top .phone-names-div .phone-link:hover {
+    transform: translateX(2rem);
+    cursor: pointer;
+  }
+  .Nav_Parent_div .Nav_div .nav-grid .right .right-bottom {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 3fr 2fr;
+    align-items: center;
+    border: none;
+  }
+  .Nav_Parent_div .Nav_div .nav-grid .right .right-bottom .audio-div {
+    margin: 0;
+    border: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Nav_Parent_div .Nav_div .nav-grid .right .right-bottom .audio-name-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 6rem;
+    height: 100%;
+    gap: 0.5rem;
+  }
+  .Nav_Parent_div .Nav_div .nav-grid .right .right-bottom .audio-name-div .audio-link {
+    font-family: "NextGameExtraBold_font";
+    transition: all 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
+    transform: translateX(0);
+  }
+  .Nav_Parent_div .Nav_div .nav-grid .right .right-bottom .audio-name-div .audio-link:hover {
+    transform: translateX(2rem);
+    cursor: pointer;
+  }
+  .Nav_Parent_div .Nav_div .nav-grid .bottom {
+    grid-area: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Nav_Parent_div .Nav_div .nav-grid .bottom h1 {
+    font-size: 18rem;
+    margin-top: 5.2rem;
+    white-space: nowrap;
+    color: #cc3628;
+    font-family: "NextGameExtraBold_font";
+  }
+}
+.section-one-home {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  pointer-events: none;
+}
+.section-one-home #heroVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-title {
+  color: black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  user-select: none;
+  text-align: center;
+  line-height: 0.8;
+}
+.hero-title h1 span {
+  font-size: 18vw;
+  font-family: "Azonix_font";
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.hero-title .nothing-text,
+.hero-title .explore-text {
+  color: #cc3628;
+  font-family: "NextGameExtraBold_font";
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  pointer-events: auto;
+  font-family: "Neue Montreal", sans-serif;
+}
+
+.canvas-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+  pointer-events: none;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  margin: 0;
+}
+
+@media (min-width: 1024px) {
+  .hero-title h1 span {
+    font-size: 9vw;
+  }
+  .canvas-wrapper {
+    pointer-events: auto;
+  }
+  canvas {
+    pointer-events: auto;
+  }
+}
+.des-card {
+  padding: 6rem 1rem;
+  background-color: #000000;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 600;
+  top: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.des-card .des-image-area {
+  width: 100%;
+}
+.des-card .des-image-area .des-image {
+  width: 100%;
+  height: 100%;
+}
+.des-card .des-image-area .des-image img {
+  width: 100%;
+  object-fit: cover;
+  width: 30rem;
+  height: 20rem;
+}
+.des-card .des-content {
+  text-align: center;
+  position: relative;
+  word-break: break-all;
+  overflow-wrap: nowrap;
+  white-space: normal;
+}
+.des-card .des-content h1 {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  line-height: 1;
+  font-weight: 500;
+  text-align: justify;
+  color: #000;
+  margin-bottom: 1rem;
+}
+.des-card .des-content h1 span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 1024px) {
+  .des-card {
+    padding: 8rem 10rem 23rem 2rem;
+    background-color: #000000;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 600;
+    top: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  .des-card .des-image-area {
+    width: 100%;
+    padding-left: 5rem;
+  }
+  .des-card .des-image-area .des-image {
+    width: 25%;
+    height: 100%;
+  }
+  .des-card .des-image-area .des-image img {
+    width: 100%;
+    object-fit: cover;
+    width: 30rem;
+    height: 28rem;
+  }
+  .des-card .des-content {
+    text-align: left;
+    position: relative;
+    top: -3rem;
+    display: flex;
+  }
+  .des-card .des-content h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+    font-weight: 500;
+    word-break: break-all;
+    color: #000;
+    margin-bottom: 1rem;
+  }
+  .des-card .des-content h1 span {
+    width: 100%;
+    display: flex;
+    margin-left: 26rem;
+    word-spacing: 1rem;
+  }
+  .des-card .des-content h1 span .word {
+    display: flex;
+    font-size: 3.3rem;
+  }
+  .des-card .des-content h1 span .word .pre {
+    display: inline-block;
+  }
+}
+.section3-mainContainer {
+  width: 100%;
+  height: 200vh;
+  background-color: #000000;
+  position: relative;
+}
+.section3-mainContainer .triangles-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 38%;
+  left: 0;
+  z-index: 700;
+  pointer-events: none;
+}
+.section3-mainContainer .triangles-wrapper .triangle1 {
+  position: absolute;
+  top: -3.5%;
+  left: 0;
+  width: 101%;
+  height: 50vh;
+  clip-path: polygon(0 18%, 99% 0, 100% 100%, 0 80%);
+  z-index: 700;
+  background-color: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section3-mainContainer .triangles-wrapper .triangle1 .triangle-heading {
+  color: #cc3628;
+  font-size: 8vw;
+  font-weight: 600;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-family: "NextGameExtraBold_font";
+  letter-spacing: 0.5rem;
+  display: inline-block;
+  text-align: center;
+  pointer-events: auto;
+}
+.section3-mainContainer .triangles-wrapper .triangle1 .triangle-heading span {
+  display: inline-block;
+}
+.section3-mainContainer .triangles-wrapper .triangle1 .triangle-heading span:hover {
+  color: rgb(255, 255, 255);
+}
+.section3-mainContainer .triangles-wrapper .triangle2 {
+  background-image: url("/images/koreanBoyPhone3.jpg");
+  filter: grayscale(1);
+  cursor: pointer;
+  position: absolute;
+  top: 16%;
+  left: 0;
+  width: 101%;
+  height: 50vh;
+  clip-path: polygon(0 100%, 0 0, 100% 18%, 100% 80%);
+  background-color: rgb(255, 255, 255);
+  z-index: 700;
+  background-size: cover;
+  background-position: center;
+  pointer-events: all;
+  object-fit: cover;
+}
+.section3-mainContainer .triangles-wrapper .triangle3 {
+  position: absolute;
+  top: 33%;
+  left: 0;
+  width: 101%;
+  height: 100vh;
+  background-color: #000000;
+  z-index: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .section3-mainContainer {
+    width: 100vw;
+    height: 300vh;
+  }
+  .section3-mainContainer .triangles-wrapper {
+    top: 12%;
+  }
+  .section3-mainContainer .triangles-wrapper .triangle1 {
+    top: -3.3%;
+    height: 100vh;
+    clip-path: polygon(0 30%, 99% 0, 100% 100%, 0 80%);
+  }
+  .section3-mainContainer .triangles-wrapper .triangle1 .triangle-heading {
+    font-size: 9vw;
+    overflow: visible;
+    letter-spacing: 0.3rem;
+  }
+  .section3-mainContainer .triangles-wrapper .triangle1 .triangle-heading span {
+    display: inline-block;
+  }
+  .section3-mainContainer .triangles-wrapper .triangle1 .triangle-heading span:hover {
+    color: rgba(240, 234, 234, 0.232);
+    filter: blur(25px);
+  }
+  .section3-mainContainer .triangles-wrapper .triangle2 {
+    top: 20%;
+    height: 100vh;
+    clip-path: polygon(0 100%, 0 0, 100% 30%, 100% 80%);
+    background-color: rgb(255, 255, 255);
+    z-index: 700;
+    background-size: cover;
+    background-position: 0% 1%;
+    object-fit: cover;
+  }
+  .section3-mainContainer .triangles-wrapper .triangle3 {
+    top: 45%;
+    height: 100vh;
+    background-color: #000000;
+  }
+}
+#cursor-wrap {
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+}
+
+.earbud-cursor {
+  width: 120px;
+  height: 120px;
+  transform: translate3d(0, 0, 0);
+  transition: width 0.2s, height 0.2s;
+  user-select: none;
+  pointer-events: none;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .earbud-cursor {
+    display: block;
+  }
+}/*# sourceMappingURL=home.css.map */
